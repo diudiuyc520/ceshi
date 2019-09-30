@@ -322,7 +322,7 @@ int LZ4_decompress_safe(const char *source, char *dest, int compressedSize,
  *	or a negative result in case of error
  *
  */
-int LZ4_decompress_safe_partial(const char *source, char *dest,
+static int LZ4_decompress_safe_partial(const char *source, char *dest,
 	int compressedSize, int targetOutputSize, int maxDecompressedSize);
 #endif
 
